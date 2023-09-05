@@ -1,0 +1,144 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: cursive;
+  background-color: #444;
+}
+.content {
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 25%;
+}
+@media (min-width: 320px) {
+  .content {
+    width: 60%;
+  }
+}
+@media (min-width: 768px) {
+  .content {
+    width: 40%;
+  }
+}
+@media (min-width: 992px){
+  .content {
+    width: 40%;
+  }
+}
+@media (min-width: 1109px) {
+  .content {
+    width: 25%;
+  }
+}
+.content .player-turn {
+  background-color: #555;
+  padding: 5px 20px;
+  text-align: center;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 12px;
+}
+.board {
+  background-color: #FFC107;
+  display: flex;
+  height: calc(250px - 1px);
+  flex-wrap: wrap;
+  margin: 15px 0;
+}
+.board div {
+  flex-basis: 33.33%;
+  height: 83px;
+  border-style: solid;
+  border-color: #FAFAFA;
+  border-width: 1px;
+  cursor: pointer;
+  transition: .3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+}   
+.board div:hover {
+  background-color: #ffa000;
+}
+button {
+  background-color: #1976D2;
+  color: #fff;
+  border: none;
+  padding: 4px 50px 7px;
+  border-radius: 20px;
+  font-weight: 600;
+  margin: 0 auto 50px auto;
+  display: block;
+  cursor: pointer;
+  font-size: 16px;
+  letter-spacing: .6px;
+  font-family: cursive;
+  transition: .3s;
+}
+button:hover {
+  background-color: #2f88df;
+}
+.leader-board {
+  background-color: #2f88df;
+  padding: 10px;
+  width: 250px;
+  height: 150px;
+  border-radius: 12px;
+  color: #fff;
+  margin: 0 auto;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+@media (min-width: 320px) {
+  .leader-board  {
+    width: 60%;
+  }
+}
+@media (min-width: 768px) {
+  .leader-board  {
+    width: 40%;
+  }
+}
+@media (min-width: 992px){
+  .leader-board  {
+    width: 40%;
+  }
+}
+@media (min-width: 1109px) {
+  .leader-board  {
+    width: 25%;
+  }
+}
+.leader-board h3 {
+  margin: 0 auto;
+  text-align: center;
+  border: 1px solid;
+  width: fit-content;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 16px;
+  font-weight: 600;
+}
+.leader-board .information {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+.leader-board .information > div h4{
+  margin: 0;
+  color: #222;
+  border-bottom: 1px solid;
+}
+.leader-board .information > div div {
+  padding: 5px;
+  text-align: center;
+}
+.leader-board .information > div .num {
+  color: #222;
+}
