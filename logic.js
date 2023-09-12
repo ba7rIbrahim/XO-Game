@@ -78,6 +78,7 @@ function evaluateBoard(items) {
   }
 }
 
+
 function showResult(winner) {
   board.style.display = "none";
   let resultDiv = document.querySelector(".result");
@@ -111,34 +112,3 @@ function storageValue(winner) {
     sessionStorage.setItem("oWinner", oWin.innerHTML);
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-// function computerPlayer() {
-//   let randomNumber;
-//   let arr = [];
-//   boardArray.forEach((ele, index) => {
-//     if(ele != 'x' && ele != 'o') {
-//       arr.push(+ele);
-//     }
-//   });
-//   randomNumber = Math.floor(Math.random() * arr.length);
-
-//   items.forEach((ele, index) => {
-//       if(ele.innerHTML === "") {
-//         items[randomNumber].innerHTML = 'o';
-//         boardArray[randomNumber] = 'o';
-//         textCount++;
-//         playerTurn.innerHTML = currentTurn = 'x';
-//       }
-//       evaluateBoard(items);
-//   });
-// }
